@@ -24,7 +24,7 @@
   },
   "scripts": {
     "prepare": "yarn build",
-    "build": "rollup -c",
+    "build": "rollup -c && cp ./dist/news-timeline.co.js ./public",
     "build:watch": "rollup -c -w",
     "watch": "concurrently 'yarn build:watch' 'yarn serve -l tcp://127.0.0.1'",
     "test": "jest && yarn build"
